@@ -3,3 +3,10 @@ Export:
 
 Import:
     dconf load /com/gexperts/Tilix/ < tilix.dconf
+
+Ctrl+Shift+T : open new session
+Ctrl+Shift+Q : close selected session
+Shift+Left/Right : move between session prev/next
+ALT+# : switch to a different session
+
+Ctrl+Alt+# : switch between terminals
