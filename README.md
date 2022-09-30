@@ -1,6 +1,7 @@
 # SUCCY_VODKA
 Vim (needs update)
 <br> MOC (needs update)
+<br> Cinnamon (needs update)
 <br> Tilix
 <br> Konsole
 <br> Fish
