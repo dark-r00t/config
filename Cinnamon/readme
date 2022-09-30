@@ -1,0 +1,5 @@
+Export:
+    dconf dump /org/cinnamon/ > cinnamon_desktop
+
+Import:
+    dconf dump /org/cinnamon/ < cinnamon_desktop
