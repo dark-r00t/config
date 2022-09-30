@@ -1,6 +1,6 @@
 # SUCCY_VODKA
-Vim
-<br> MOC
+Vim (needs update)
+<br> MOC (needs update)
 <br> Tilix
 <br> Konsole
 <br> Fish
