@@ -1,0 +1,28 @@
+[/]
+app-title='${sessionName}'
+prompt-on-close=false
+prompt-on-close-process=false
+quake-specific-monitor=0
+terminal-title-style='none'
+theme-variant='dark'
+warn-vte-config-issue=false
+window-style='disable-csd-hide-toolbar'
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#101010101010'
+background-transparency-percent=0
+badge-color='#AC7EA8'
+badge-color-set=false
+badge-text=''
+bold-color-set=false
+cursor-colors-set=false
+cursor-shape='underline'
+custom-command='fish'
+font='FantasqueSansMono Nerd Font 12'
+foreground-color='#EEEEEEEEEEEE'
+highlight-colors-set=false
+palette=['#252525', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#EBEB6D6DE7E7', '#00ACC1', '#F5F5F5', '#708284', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#DFDF3E3ECECE', '#00ACC1', '#F5F5F5']
+use-custom-command=true
+use-system-font=false
+use-theme-colors=false
+visible-name='Default'

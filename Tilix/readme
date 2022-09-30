@@ -1,0 +1,5 @@
+Export:
+    dconf dump /com/gexperts/Tilix/ > tilix.dconf
+
+Import:
+    dconf load /com/gexperts/Tilix/ < tilix.dconf
