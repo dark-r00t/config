@@ -5,6 +5,10 @@ set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
+function fish_greeting
+	bat ~/todo
+end
+
 ## Export variable need for qt-theme
 if type "qtile" >> /dev/null 2>&1
    set -x QT_QPA_PLATFORMTHEME "qt5ct":q
@@ -98,6 +102,9 @@ function copy
     end
 end
 
+# SOURCES
+source ~/perl5/perlbrew/etc/perlbrew.fish
+
 ## Useful aliases
 # Replace ls with exa
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
@@ -144,7 +151,9 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 # MEME
 alias fuckoff="sudo shutdown -n now"
 alias brb="reboot"
-alias brutaldoom="cd ~ && gzdoom -file brutal.pk3"
+alias brutaldoom="gzdoom -file ADDON/brutal.pk3 >> ~/.config/gzdoom/LOG/brutaldoom.log"
+alias sirendoom="gzdoom -file ADDON/siren.pk3 ADDON/nashgore.pk3 >> ~/.config/gzdoom/LOG/sirendoom.log"
+alias darkdoom="gzdoom -file MAPS/darkmoon_sanitized.pk3 ADDON/siren.pk3 ADDON/nashgore.pk3 >> ~/.config/gzdoom/LOG/darkdoom.log"
 alias minecraft="java -jar ~/tlauncher/TLauncher-2.841.jar"
 
 #UTILITY
@@ -170,10 +179,6 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 alias emacs="emacsclient -c -a 'emacs'"
 
 alias pacmanspace="pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | bat"
-alias systemstatus="systemctl status sshd | bat --color=always  && systemctl status tor | bat --color=always"
+alias systemstatus="systemctl status sshd | bat --color==always  && systemctl status tor | bat --color=always"
 
-alias yt="ytfzf -t --pages=4 --force-youtube --loop --async-thumbnails"
-alias ytvideo="yt --type=video"
-alias ytmusic="ytvideo --audio-only"
-alias ytchannel="yt --type=channel"
-alias od="ytfzf -cO -t --odysee-video-count=50 --loop --async-thumbnails"
+# POOP
