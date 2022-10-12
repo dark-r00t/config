@@ -179,6 +179,6 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 alias emacs="emacsclient -c -a 'emacs'"
 
 alias pacmanspace="pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | bat"
-alias systemstatus="systemctl status sshd | bat --color==always  && systemctl status tor | bat --color=always"
+alias systemstatus="systemctl status sshd | bat --color=always  && systemctl status tor | bat --color=always"
 
 # POOP
