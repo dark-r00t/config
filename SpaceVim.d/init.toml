@@ -1,0 +1,87 @@
+#=============================================================================
+# basic.toml --- basic configuration example for SpaceVim
+# Copyright (c) 2016-2022 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "onedark"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    #install nerd fonts
+    statusline_separator = "nil"
+    statusline_iseparator = "bar"
+    buffer_index_type = 4
+    windows_index_type = 3
+    enable_tabline_filetype_icon = false
+    enable_statusline_mode = false
+    statusline_unicode = false
+    # Enable vim compatible mode, avoid changing origin vim key bindings
+    vimcompatible = true
+    default_indent = 4
+    name = "colorscheme"
+
+
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "cycle"
+
+# Enable Linters
+[[layers]]
+  name = "checkers"
+  lint_on_the_fly = true
+
+# Enable Code Formating
+[[layers]]
+  name = "format"
+# format_method = "codefmt"
+  format_on_save = true
+  silent_format = true
+  enable = true
+
+# Enable C/C++ Lang
+[[layers]]
+  name = 'lang#c'
+  enable_clanng_syntax_highlight = true
+# format_on_save = true
+  default_indent = 4
+  [layer.clang_std]
+    cpp = 'c11'
+
+# Enable Rust Lang
+# rustup component add rls rust-analysis rust-src
+[[layers]]
+  name = "lang#rust"
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "rust"
+  ]
+  [layers.override_cmd]
+    rust = ["rls"]
+
+# Enable Perl Lang 
+# cpanm Perl::Critic
+[[layers]]
+  name = "lang#perl"
+
+# Enable Go Lang
+[[layers]]
+    name = "lang#go"
+    name = "format"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
