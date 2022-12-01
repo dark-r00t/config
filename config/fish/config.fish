@@ -6,7 +6,7 @@ set VIRTUAL_ENV_DISABLE_PROMPT "1"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 function fish_greeting
-	bat ~/todo
+	# bat ~/todo
 end
 
 ## Export variable need for qt-theme
@@ -149,16 +149,11 @@ alias jctl="journalctl -p 3 -xb"
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 # MEME
-alias fuckoff="sudo shutdown -n now"
+alias fuckoff="sudo shutdown now"
 alias brb="reboot"
 alias brutaldoom="gzdoom -file ADDON/brutal.pk3 >> ~/.config/gzdoom/LOG/brutaldoom.log"
 alias sirendoom="gzdoom -file ADDON/siren.pk3 ADDON/nashgore.pk3 >> ~/.config/gzdoom/LOG/sirendoom.log"
 alias darkdoom="gzdoom -file MAPS/darkmoon_sanitized.pk3 ADDON/siren.pk3 ADDON/nashgore.pk3 >> ~/.config/gzdoom/LOG/darkdoom.log"
-alias minecraft="java -jar ~/tlauncher/TLauncher-2.841.jar"
-
-#UTILITY
-alias move="mv"
-alias copy="cp"
 
 alias [desktop]="cd ~/Desktop/ && ls"
 alias [home]="cd ~/ && ls"
@@ -171,12 +166,6 @@ alias tmpgit="git init && git add . && git commit -m \"skeleton\""
 alias tmpc="mkdir ~/Desktop/tmp && cd ~/Desktop/tmp && tmpmain && tmpmake && tmpgit && ls"
 alias tmpd="sudo rm -r ~/Desktop/tmp && cd ~/Desktop"
 alias tmp="cd ~/Desktop/tmp && ls"
-
-alias clean="sudo bleachbit -c --preset"
-alias neofetch="neofetch --ascii_distro archlinux"
-
-export PATH="$HOME/.emacs.d/bin:$PATH"
-alias emacs="emacsclient -c -a 'emacs'"
 
 alias pacmanspace="pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | bat"
 alias systemstatus="systemctl status sshd | bat --color=always  && systemctl status tor | bat --color=always"
