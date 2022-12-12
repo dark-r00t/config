@@ -3,6 +3,8 @@
 # Hide welcome message
 set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
+
+## NOTE, if on a debian based distro, bat will be called with batcat!
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 function fish_greeting
@@ -151,15 +153,8 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 # MEME
 alias fuckoff="sudo shutdown now"
 alias brb="reboot"
-alias brutaldoom="gzdoom -file ADDON/brutal.pk3 >> ~/.config/gzdoom/LOG/brutaldoom.log"
-alias sirendoom="gzdoom -file ADDON/siren.pk3 ADDON/nashgore.pk3 >> ~/.config/gzdoom/LOG/sirendoom.log"
-alias darkdoom="gzdoom -file MAPS/darkmoon_sanitized.pk3 ADDON/siren.pk3 ADDON/nashgore.pk3 >> ~/.config/gzdoom/LOG/darkdoom.log"
 
-alias [desktop]="cd ~/Desktop/ && ls"
-alias [home]="cd ~/ && ls"
-alias [documents]="cd ~/Documents && ls"
-alias [downloads]="cd ~/Downloads && ls"
-
+# Convenience 
 alias tmpmain="printf '#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <unistd.h>\n\nint main(void) {\n\n}' >> ~/Desktop/tmp/main.c"
 alias tmpmake="printf 'run: main.c\n\t\$(CC) -Wall -o run main.c\n' >> ~/Desktop/tmp/Makefile"
 alias tmpgit="git init && git add . && git commit -m \"skeleton\""
@@ -167,9 +162,7 @@ alias tmpc="mkdir ~/Desktop/tmp && cd ~/Desktop/tmp && tmpmain && tmpmake && tmp
 alias tmpd="sudo rm -r ~/Desktop/tmp && cd ~/Desktop"
 alias tmp="cd ~/Desktop/tmp && ls"
 
-alias pacmanspace="pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | bat"
-alias systemstatus="systemctl status sshd | bat --color=always  && systemctl status tor | bat --color=always"
-
+# Im not typing this shit out ever again...
 alias yt="ytfzf -t --pages=5 --force-youtube --loop --async-thumbnails --ytdl-path=\'/usr/bin/yt-dlp\'"
 alias ytvideo="yt --type=video"
 alias ytmusic="ytvideo --audio-only"
