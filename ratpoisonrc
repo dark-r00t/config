@@ -1,0 +1,29 @@
+exec /usr/bin/rpws init 4 -k
+
+set winname title
+set wingravity center
+set transgravity center
+set border 4
+set barinpadding 1
+set padding 0 0 0 0 
+set barpadding 10 4
+set barinpadding 0 
+set inputwidth 160
+set bargravity c
+set bgcolor #000000
+set fgcolor #FF6200
+set fwcolor #FF6200
+set bwcolor #224528
+set framemsgwait -1
+set mesgwait 4
+
+escape Alt_L
+
+bind b exec firefox
+bind c exec alacritty
+bind t time
+
+bind 1 exec rpws 1
+bind 2 exec rpws 2
+bind 3 exec rpws 3
+bind 4 exec rpws 4
