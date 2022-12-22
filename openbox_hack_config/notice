@@ -1,0 +1,11 @@
+this still needs color adjustment for things like xfce4-terminal, geany etc
+additionally, there needs to be adjustment with alacritty terminal theme
+    i currently use alacritty-theme npm (npm i -g alacritty-themes -> alacritty-themes -> Belge)
+
+default wallpaper needs to be adjusted to just a pure black one
+
+dunst icons needs to be changed to glyphs! or, papirus-dark
+
+paprius-dark icons need to be installed btw
+
+these config files rely on presets provided by: Archcraft
