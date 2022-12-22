@@ -8,4 +8,6 @@ dunst icons needs to be changed to glyphs! or, papirus-dark
 
 paprius-dark icons need to be installed btw
 
+bottom bar commented out: https://github.com/dark-r00t/SUCCY_VODKA/blob/main/openbox_hack_config/config/openbox/polybar/hack/launch.sh
+
 these config files rely on presets provided by: Archcraft
