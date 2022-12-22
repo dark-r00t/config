@@ -14,7 +14,7 @@ dunst_path="$HOME/.config/dunst"
 
 # wallpaper ---------------------------------
 set_wallpaper() {
-	nitrogen --save --set-zoom-fill /usr/share/backgrounds/"$1"
+	nitrogen --save --set-zoom-fill /usr/share/backgrounds/black.png
 }
 
 # polybar -----------------------------------
@@ -127,7 +127,7 @@ obconfig () {
 	fontsize="$4"
 
 	# Theme
-	xmlstarlet ed -L -N a="$namespace" -u '/a:openbox_config/a:theme/a:name' -v "Windows-10-Dark" "$config"
+	xmlstarlet ed -L -N a="$namespace" -u '/a:openbox_config/a:theme/a:name' -v "Windows-10-Dark" "$config" # Verified
 
 	# Title
 	xmlstarlet ed -L -N a="$namespace" -u '/a:openbox_config/a:theme/a:titleLayout' -v "$layout" "$config"
