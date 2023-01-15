@@ -1,0 +1,32 @@
+return {
+	logo = {
+		graphic = {
+			" \027[31;1m   :+sMs.",
+			" \027[31;1m `:ddNMd-                         -o--`",
+			" \027[31;1m-sMMMMh:                          `+N+``",
+			" \027[31;1myMMMMMs`     .....-/-...           `mNh/",
+			" \027[31;1myMMMMMmh+-`:sdmmmmmmMmmmmddy+-``./ddNMMm",
+			" \027[31;1myNMMNMMMMNdyyNNMMMMMMMMMMMMMMMhyshNmMMMm",
+			" \027[31;1m:yMMMMMMMMMNdooNMMMMMMMMMMMMMMMMNmy:mMMd",
+			" \027[31;1m +MMMMMMMMMmy:sNMMMMMMMMMMMMMMMMMMMmshs-",
+			" \027[31;1m :hNMMMMMMN+-+MMMMMMMMMMMMMMMMMMMMMMMs.",
+			" \027[31;1m.omysmNNhy/+yNMMMMMMMMMMNMMMMMMMMMNdNNy-",
+			" \027[31;1m/hMM:::::/hNMMMMMMMMMMMm/-yNMMMMMMN.mMNh`",
+			" \027[31;1m.hMMMMdhdMMMMMMMMMMMMMMmo  `sMMMMMMN mMMm-",
+			" \027[31;1m:dMMMMMMMMMMMMMMMMMMMMMdo+  oMMMMMMN`smMNo`",
+			" \027[31;1m/dMMMMMMMMMMMMMMMMMMMMMNd/` :yMMMMMN:-hMMM.",
+			" \027[31;1m:dMMMMMMMMMMMMMMMMMMMMMNh`  oMMMMMMNo/dMNN`",
+			" \027[31;1m:hMMMMMMMMMMMMMMMMMMMMMMNs--sMMMMMMMNNmy++`",
+			" \027[31;1msNMMMMMMMMMMMMMMMMMMMMMMMmmNMMMMMMNho::o.",
+			" \027[31;1m:yMMMMMMMMMMMMMNho+sydNNNNNNNmysso/` -//",
+			" \027[31;1m  /dMMMMMMMMMMMMMs-  ````````..``     //",
+			" \027[31;1m   .oMMMMMMMMMMMMNs`               ./y:`",
+			" \027[31;1m     +dNMMNMMMMMMMmy`          ``./ys.",
+			" \027[31;1m      `/hMMMMMMMMMMMNo-``    `.+yy+``",
+			" \027[31;1m        `-/hmNMNMMMMMMmmddddhhy/-`",
+			" \027[31;1m            `-+oooyMMMdsoo+/:.\027[m",
+		},
+		requires_color = true,
+		shift = {x = 2, y = 3},
+	}
+}
