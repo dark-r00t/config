@@ -52,7 +52,7 @@
     default_indent = 4
     [layer.clang_std]
         cpp = 'c11'
-# rustup component add rls rust-analysis rust-src
+# rustup, rust-src
 [[layers]]
     name = "lang#rust"
     [[layers]]
