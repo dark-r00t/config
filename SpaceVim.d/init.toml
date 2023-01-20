@@ -2,10 +2,11 @@
 #                   OPTIONS
 #-----------------------------------------------
 [options]
-#   colorscheme = "onedark"
+    colorscheme = "onedark"
 #   colorscheme = "SpaceVim"
 #   colorscheme = "molokai-dark"
-    colorscheme = "monokai_pro"
+#   colorscheme = "monokai_pro"
+#   colorscheme = "dracula"
     colorscheme_bg = "dark"
     enable_guicolors = true
     rainbow_active = 1
@@ -68,6 +69,8 @@
     name = "lang#go"
     name = "format"
 [[layers]]
+    name = "lang#haskell"
+[[layers]]
     name = 'shell'
     default_position = 'bottom'
     default_height = 30
@@ -87,4 +90,3 @@
 [[custom_plugins]]
     repo = "https://github.com/phanviet/vim-monokai-pro"
     merged = 0
-
