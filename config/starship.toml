@@ -3,7 +3,7 @@
 [username]
 disabled=false
 #format = "[$user]($style)@"
-format = "[anon]($style) in "
+format = "[$user]($style) in "
 show_always = true
 style_root = "bold red"
 style_user = "bold red"
