@@ -37,6 +37,9 @@ endfunction
 set hidden
 set nobackup
 
+"on instance where backspace & delete key doesn't work as intended 
+"set backspace=indent,eol,start
+
 set termguicolors
 "colorscheme molokai
 colorscheme onedark
