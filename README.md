@@ -1,4 +1,4 @@
-# SUCCY_VODKA
+# Config
 Vim (needs update)
 <br> MOC (needs update)
 <br> Cinnamon 
