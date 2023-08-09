@@ -5,7 +5,10 @@ set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
 
 ## NOTE, if on a debian based distro, bat will be called with batcat!
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+# set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+function man
+	command man $argv | sh -c 'col -bx | bat -l man -p'
+end
 
 function fish_greeting
 	# bat ~/todo
