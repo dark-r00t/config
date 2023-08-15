@@ -162,7 +162,7 @@ alias tmpmain="printf '#include <stdio.h>\n#include <stdlib.h>\n#include <string
 alias tmpmake="printf 'run: main.c\n\t\$(CC) -Wall -o run main.c\n' >> ~/Desktop/tmp/Makefile"
 alias tmpgit="git init && git add . && git commit -m \"skeleton\""
 alias tmpc="mkdir ~/Desktop/tmp && cd ~/Desktop/tmp && tmpmain && tmpmake && tmpgit && ls"
-alias tmpd="sudo rm -r ~/Desktop/tmp && cd ~/Desktop"
+alias tmpd="rm -r ~/Desktop/tmp && cd ~/Desktop"
 alias tmp="cd ~/Desktop/tmp && ls"
 
 # Im not typing this shit out ever again...
