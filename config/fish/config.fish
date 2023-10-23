@@ -108,7 +108,7 @@ function copy
 end
 
 # SOURCES
-source ~/perl5/perlbrew/etc/perlbrew.fish
+# source ~/perl5/perlbrew/etc/perlbrew.fish
 
 ## Useful aliases
 # Replace ls with exa
@@ -171,3 +171,7 @@ alias ytvideo="yt --type=video"
 alias ytmusic="ytvideo --audio-only"
 alias ytchannel="yt --type=channel"
 alias od="ytfzf -cO -t --odysee-video-count=100 --loop --async-thumbnails"
+
+# 
+alias sublime="~/Documents/sublime_text/subl
+alias virtualbox="VirtualBox -style Adwaita-Dark %U"
