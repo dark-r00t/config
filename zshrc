@@ -51,16 +51,10 @@ alias tmpd="sudo rm -r ~/Desktop/tmp && cd ~/Desktop"
 alias tmp="cd ~/Desktop/tmp && ls"
 
 
-# Im not typing this shit out ever again...
+# Im not typing this out ever again...
 alias yt="ytfzf -t --pages=5 --force-youtube --loop --async-thumbnails --ytdl-path=\'/usr/bin/yt-dlp\'"
 alias ytvideo="yt --type=video"
 alias ytmusic="ytvideo --audio-only"
 alias ytchannel="yt --type=channel"
 alias od="ytfzf -cO -t --odysee-video-count=100 --loop --async-thumbnails"
-
-
-# MEME
-alias fuckoff="sudo shutdown now"
-alias brb="reboot"
-
 
