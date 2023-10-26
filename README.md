@@ -1,9 +1,2 @@
 # Config
-Vim (needs update)
-<br> MOC (needs update)
-<br> Cinnamon 
-<br> Tilix
-<br> Konsole
-<br> Fish (! needs update)
-<br> XP-PEN
-<br> Neofetch
+reorganization needed
