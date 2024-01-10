@@ -47,7 +47,7 @@ end
 
 ## Starship prompt ORIGINAL
 if status --is-interactive
-   source ("/usr/bin/starship" init fish --print-full-init | psub)
+   source ("/usr/local/bin/starship" init fish --print-full-init | psub)
 end
 
 ## Advanced command-not-found hook
@@ -173,5 +173,4 @@ alias ytchannel="yt --type=channel"
 alias od="ytfzf -cO -t --odysee-video-count=100 --loop --async-thumbnails"
 
 # 
-alias sublime="~/Documents/sublime_text/subl
-alias virtualbox="VirtualBox -style Adwaita-Dark %U"
+
