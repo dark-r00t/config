@@ -118,6 +118,7 @@ alias ll='exa -l --color=always --group-directories-first --icons'  # long forma
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
 alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
 alias ip="ip -color"
+alias rm="mv -t ~/.local/share/Trash/files/"
 
 # Common use
 alias grubup="sudo update-grub"
