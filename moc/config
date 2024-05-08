@@ -1,5 +1,2 @@
 Theme = black_red_white
-MusicDir = /home/anon/Music
-Fastdir1 = ${MusicDir}/yt
-Fastdir2 = ${MusicDir}/playlistception
-Fastdir3 = ${MusicDir}/russian-yt
+
